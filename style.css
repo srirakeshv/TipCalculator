@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700;800&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Red+Hat+Display:wght@500;700;900&family=Space+Grotesk:wght@500&family=Space+Mono:wght@700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    min-height: 100vh;
+    font-family: Space Mono;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+h5,h6,div{
+    margin: 0;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+/* main content */
+.container{
+    box-sizing: border-box;
+    max-width: 600px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.container label{
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    color: hsl(186, 14%, 43%);
+}
+.container .label{
+    font-size: 0.8rem;
+    color: hsl(186, 14%, 43%);
+}
+.container .bill{
+    box-sizing: border-box;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bill div{
+    display: flex;
+    flex-direction: column;
+}
+.billamount .icon{
+    position: relative;
+}
+.billamount .icon img{
+    margin-left: 15px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.billamount .icon input{
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 5px 10px 5px 0;
+    border-radius: 5px;
+    border: 0;
+    background-color: hsl(189, 41%, 97%);
+}
+.billamount .icon input::placeholder{
+    font-family: Space Mono;
+}
+.billamount .icon input::-webkit-inner-spin-button,::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+.bill .label{
+    margin-top: 20px;
+}
+.bill .percentage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.percentage .percent{
+    width: 80px;
+    border-radius: 5px;
+    border: 0;
+   font-size: 1.2rem;
+   padding: 5px;
+   text-align: center;
+   font-weight: 700;
+   color: hsl(189, 41%, 97%);
+   background-color: hsl(183, 100%, 15%);
+}
+.percentage #cus{
+    padding: 0;
+    background-color: hsl(189, 41%, 97%);
+}
+.percentage input{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 0;
+    background-color: hsl(189, 41%, 97%);
+    color: black;
+    font-family: Space Mono;
+    text-align: center;
+}
+.percentage input::placeholder{
+    color: hsl(186, 14%, 43%);
+    font-family: Space Mono;
+    text-align: center;
+}
+.bill .people{
+    margin-top: 20px;
+}
+.people .error{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.people .error p{
+    margin: 0;
+    margin-right: 2px;
+    font-size: 0.8rem;
+}
+.people .icon{
+    position: relative;
+}
+.people .icon img{
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.people .icon input{
+    padding: 5px 10px 5px 0;
+    font-size: 1.5rem;
+    background-color: hsl(189, 41%, 97%);
+    border: 0;
+    text-align: right;
+    border-radius: 5px;
+}
+.people .icon input::placeholder{
+    font-family: Space Mono;
+}
+.people .icon input::-webkit-inner-spin-button,::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+/* amount */
+.container .tipamount{
+    box-sizing: border-box;
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(183, 100%, 15%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tipamount .money{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tipamount .tamount{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.tipamount .tamount h5{
+    color: hsl(189, 41%, 97%);
+}
+.tipamount .tamount h6{
+    color: hsl(186, 14%, 43%);
+}
+.tamount p{
+    font-size: 2rem;
+    margin: 0;
+    color: hsl(172, 67%, 45%);
+    align-self: flex-end;
+}
+.tamount #self{
+    align-self: flex-end;
+}
+.money #space{
+    justify-content: space-between;
+}
+.tipamount button{
+    font-size: 1.3rem;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 0;
+    text-transform: uppercase;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    background-color: hsla(172, 93%, 23%, 0.3);
+}
+/* active */
+.bill input:hover{
+    cursor: pointer;
+    border: 1px solid hsla(172, 67%, 45%,0.6);
+    border-color: hsla(172, 67%, 45%,0.6);
+}
+.percentage button:hover{
+    cursor: pointer;
+    background-color: hsl(171, 84%, 80%);
+    color: hsl(183, 100%, 15%);
+}
+.tipamount button:hover{
+    cursor: pointer;
+    background-color: hsl(171, 84%, 80%);
+}
+.percentage button:focus{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+.tipamount button:focus{
+    background-color: hsl(172, 67%, 45%);
+}
+#errormessage{
+    color: red;
+}
+/*  */
+@media all and (max-width:600px) {
+    .container{
+        padding: 30px;
+    }
+    .container .bill{
+        max-width: 100%;
+    }
+    .container .bill .percentage .percent{
+        width: 150px;
+    }
+    .container .tipamount{
+        max-width: 100%;
+    }
+    .container .tipamount .tamount{
+        gap: 100px;
+    }
+    .title{
+        margin-top: 20px;
+    }
+}
